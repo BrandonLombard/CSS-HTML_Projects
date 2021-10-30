@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Styled Buttons 1</title>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+	
+	* {
+		font-family: 'Source Sans Pro', sans-serif;
+		letter-spacing: 4px;
+		background-color: #25252A;
+	}
+	
+	h1 {
+		color: white;
+		text-align: center;
+	}
+	
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		clear: both;
+		align-items: center;
+		text-align: center;
+		min-height: 100vh;
+	}
+	
+	/* First Button */
+	.btn-1 {
+		width: 300px;
+		height: 100px;
+		border: none;
+		color: white;
+		background-color: rgb(255, 0, 68);
+		border-radius: 4px;
+		box-shadow: inset 0 0 0 0 red;	
+		transition: ease-out 0.5s;
+		font-size: 2rem;
+		outline: none;
+	}
+	
+	.btn-1:hover {
+		box-shadow: inset 0px 0em 0em 1em white;
+		cursor: pointer;
+		color: white;
+	}
+	
+	/* Second Button */
+	.btn-2 {
+		width: 300px;
+		height: 100px;
+		border: none;
+		color: white;
+		font-size: 2rem;
+		background: repeating-linear-gradient(
+			45deg,
+			#606dbc,
+			#606dbc 10px,
+			#465298 10px,
+			#465298 20px
+		);
+	}
+	
+	.btn-2:hover {
+		color: gray;
+		background: repeating-linear-gradient(
+			45deg,
+			#ffde24,
+			#ffde24 10px,
+			#465298 10px,
+			#465298 20px
+		);
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px gray, 0 0 40px gray, 0 0 50px #ffff00, 0 0 60px #ffff00, 0 0 70px #ffff00;
+		cursor: pointer;
+	}
+	
+	.btn-3 {
+		width: 300px;
+		height: 100px;
+		border: none;
+		transition: 1s;
+		color: gray;
+		font-size: 2rem;
+		background-color: white;
+		border-left: solid 4px #668ad8;
+	}
+	
+	.btn-3:hover {
+		cursor: pointer;
+		transition: 1s;
+		color: white;
+		box-shadow: inset 300px 0 0 0 #668ad8;
+	}
+	
+	.btn-4 {
+		width: 300px;
+		height: 100px;
+		border: none;
+		background-color: gray;
+		color: white;
+		font-size: 2em;
+		transition: 1s;
+		box-shadow: inset 0 -50px 0 0 purple;
+	}
+	
+	.btn-4:hover {
+		cursor: pointer;
+		transition: 1s;
+		color: yellow;
+		box-shadow: inset 0 50px 0 0 purple;
+	}
+	
+</style>
+</head>
+
+<body>
+	<h1>Simple Hover Effect Buttons</h1>
+	<div class="container">
+		<button class="btn-1">BUTTON 1</button>
+		<button class="btn-2">BUTTON 2</button>
+		<button class="btn-3">BUTTON 3</button>
+		<button class="btn-4">BUTTON 4</button>
+	</div>
+</body>
+
+</html>
